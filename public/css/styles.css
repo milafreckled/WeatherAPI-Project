@@ -1,0 +1,86 @@
+body{
+  margin: 3%;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 3400%;
+	animation: gradient 15s ease infinite;
+  background-repeat: no-repeat;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+form{
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  top: 40%;
+}
+form label[for="cityInput"]{
+  font-size: 3.5rem;
+  text-align: left;
+}
+img{
+  float: right;
+  justify-content: center;
+  align-self: center;
+}
+.weather-info{
+  padding: 0 10%;
+  text-align: left;
+}
+/*body{
+  background: -webkit-linear-gradient(45deg, #c1a1d3, #fff3e6);
+  font-size: 3.5rem;
+}*/
+button{
+  margin-top: .3rem;
+  width: calc((247px - 157px)*1);
+  background-color: lightsalmon;
+}
+#add-to-archive{
+  position: relative;
+    height: 50px;
+    text-align: left;
+}
+input, button{
+  height: 20px;
+  border-radius: 10%;
+}
+button:hover{
+  box-shadow: 2px 2px blue;
+}
+.archive-grid{
+  background-color: beige;
+  border: 2px solid grey;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-auto-columns: minmax(100px, auto);
+
+}
+.grid-row-first, .grid-row-sc, .grid-row-th, .grid-row-ft{
+  padding: 3% 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.6);
+  grid-column: 1;
+  grid-row: 1/4;
+}
+.grid-row-sc{
+  grid-column: 2;
+}
+.grid-row-th{
+
+  grid-column: 3;
+}
+.grid-row-ft{
+  grid-column: 4;
+}

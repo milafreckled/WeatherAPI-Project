@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  </head>
+  <body>
+
+
+    <div class="weather-info">
+      <p id="date">
+        <%= todaysDate %></br>
+        <%= currentTime %>
+      </p>
+    <h1>The weather in <%= chosenCity %>: <em><%= weather %></em></h1>
+    <img src="<%= imageSource %> " alt="weather icon" >
+    <p><%= temperature %>ºC</p>
+
+    <button action="/archive" method="get" id="add-to-archive" type="submit" name="button">Add to archive</button>
+    </div>
+<!-- <form  action="/" method="post">
+  <label for="cityInput">City name:</label>
+  <input id="cityInput" type="text" name="cityName">
+  <button type="submit" name="submit" value="go">Go</button> -->
+</body>
+</html>
